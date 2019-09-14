@@ -1,18 +1,17 @@
 // ==UserScript==
 // @name           RU-Board WhosOnline mod
 // @author         Zloy_Gelud
-// @namespace      http://userscripts.org/scripts/show/447007
+// @namespace      https://raw.githubusercontent.com/Alexey71/script-adguard/master/RU-Board_Whos_Online_Mod.js
 // @include        http*://forum.ru-board.com/topic.cgi?forum=*
 // @include        http*://72.233.112.78/topic.cgi?forum=*
 // @include        http*://forum.ru-board.com/forum.cgi?forum=*
 // @include        http*://72.233.112.78/forum.cgi?forum=*
 // @icon           http://forum.ru-board.com/favicon.ico
 // @description    Скрипт добавляет значок справа от имени юзера зеленого цвета - пользователь в онлайне, красного - модератор в онлайне, серого - оба в офлайне
-// @require        http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
-// @updateURL      https://userscripts.org/scripts/source/447007.meta.js
-// @downloadURL    https://userscripts.org/scripts/source/447007.user.js
+// @updateURL      https://raw.githubusercontent.com/Alexey71/script-adguard/master/RU-Board_Whos_Online_Mod.js
+// @downloadURL    https://raw.githubusercontent.com/Alexey71/script-adguard/master/RU-Board_Whos_Online_Mod.js
 // @screenshot     http://s3.amazonaws.com/uso_ss/25950/large.png
-// @version        0.4
+// @version        0.5
 // @grant          none
 // @run-at         document-start
 // ==/UserScript==

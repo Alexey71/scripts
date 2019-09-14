@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       RuTor.org Search Filter
 // @namespace  rutor
-// @version    1.0
+// @version    1.1
 // @description  search current table
 // @include      *top-tor.org/*
 // @include      *zerkalo-rutor.org/*
@@ -14,7 +14,6 @@
 // @include      *fast-tor.net/*
 // @include      *rutor.in/*
 // @copyright  2014, drakulaboy
-// @require     http://code.jquery.com/jquery-2.1.1.min.js
 // ==/UserScript==
 $(function(e){
     $('<input id="filter" />')

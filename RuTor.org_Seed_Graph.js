@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       RuTor.org seed graph
-// @namespace  http://qmegas.info/rutor
-// @version    0.4.3
+// @namespace  https://raw.githubusercontent.com/Alexey71/script-adguard/master/RuTor.org_Seed_Graph.js
+// @version    0.4.4
 // @description  Помогает визуально увидить популярность той или иной раздачи.
 // @include      *top-tor.org/*
 // @include      *zerkalo-rutor.org/*
@@ -14,9 +14,6 @@
 // @include      *fast-tor.net/*
 // @include      *rutor.in/*
 // @copyright  Megas (qmegas.info)
-//
-// @require        http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js
-//
 // @grant       GM_getValue
 // @grant       GM_setValue
 // @grant       GM_addStyle
