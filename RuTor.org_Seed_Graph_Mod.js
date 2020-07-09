@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name       RuTor.org seed graph
+// @name       RuTor.org Seed Graph Mod
 // @namespace  https://raw.githubusercontent.com/Alexey71/script-adguard/master/RuTor.org_Seed_Graph.js
 // @version    0.4.6
 // @description  Помогает визуально увидить популярность той или иной раздачи.
@@ -24,10 +24,10 @@
 //Version log:
 // v0.4.6
 //	- Добавлено выделение раздач за 2020 год
-//	- Выделение iPad раздач заменено на выделение 4K
+//	- Выделение 3D раздач заменено на выделение 4K
 //
 // v0.4.5
-//	- Выделение ipda раздач заменено на HDRezka Studio
+//	- Выделение iPad раздач заменено на HDRezka Studio
 //
 // v0.4.4
 //      - слегка изменён метод вычисления ширины полоски
