@@ -79,7 +79,7 @@ function RutorScript()
 			year_color: GM_getValue('year_color', '#ddddff'),
 			mark_uhd: GM_getValue('mark_uhd', false),
 			uhd_color: GM_getValue('uhd_color', '#f4ddff'),
-            mark_itunes: GM_getValue('mark_itunes', true),
+			mark_itunes: GM_getValue('mark_itunes', true),
 			itunes_color: GM_getValue('itunes_color', '#ffe2d5'),
 		};
 	}
@@ -91,7 +91,7 @@ function RutorScript()
 		GM_addStyle('tr.qmegas-hdrezka td { background-color: ' + this.settings.hdrezka_color + '; }');
 		GM_addStyle('tr.qmegas-year td { background-color: ' + this.settings.year_color + '; }');
 		GM_addStyle('tr.qmegas-uhd td { background-color: ' + this.settings.uhd_color + '; }');
-        GM_addStyle('tr.qmegas-itunes td { background-color: ' + this.settings.itunes_color + '; }');
+		GM_addStyle('tr.qmegas-itunes td { background-color: ' + this.settings.itunes_color + '; }');
 	}
 
 	this.toggleSettings = function()
@@ -113,7 +113,7 @@ function RutorScript()
 		if (this.settings.mark_uhd)
 			$('#qmegas_mark_uhd').attr('checked', true);
 		$('#qmegas_uhd_color').val(this.settings.uhd_color);
-        if (this.settings.mark_itunes)
+		if (this.settings.mark_itunes)
 			$('#qmegas_mark_itunes').attr('checked', true);
 		$('#qmegas_itunes_color').val(this.settings.itunes_color);
 
@@ -145,7 +145,7 @@ function RutorScript()
 			GM_setValue('year_color', $('#qmegas_year_color').val());
 			GM_setValue('mark_uhd', $('#qmegas_mark_uhd').is(':checked'));
 			GM_setValue('uhd_color', $('#qmegas_uhd_color').val());
-            GM_setValue('mark_itunes', $('#qmegas_mark_itunes').is(':checked'));
+			GM_setValue('mark_itunes', $('#qmegas_mark_itunes').is(':checked'));
 			GM_setValue('itunes_color', $('#qmegas_itunes_color').val());
 
 			obj.loadSettings();
@@ -163,7 +163,7 @@ function RutorScript()
 		        count = parseInt($.trim($($spans4.get(0)).text())) + parseInt($.trim($($spans4.get(1)).text())),
 		        sp1as$ = $($trs.get(1)).find('a');
 
-            var sp1a = (sp1as$.length == 2) ? sp1as$.get(1) : sp1as$.get(2);
+		    var sp1a = (sp1as$.length == 2) ? sp1as$.get(1) : sp1as$.get(2);
 
 		    count = Math.min(max_width, parseInt(count/1));
 		    $($trs.get(1)).append('<div class="qmegas-line" style="width: ' + count + 'px"></div>');
@@ -176,7 +176,7 @@ function RutorScript()
 		        $(this).addClass('qmegas-year');
 		    if (obj.settings.mark_uhd && (sp1a.innerHTML.indexOf('2160p') !== -1))
 		        $(this).addClass('qmegas-uhd');
-            if (obj.settings.mark_itunes && (sp1a.innerHTML.indexOf('iTunes') !== -1))
+		    if (obj.settings.mark_itunes && (sp1a.innerHTML.indexOf('iTunes') !== -1))
 		        $(this).addClass('qmegas-itunes');
 		});
 	}
