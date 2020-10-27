@@ -1,9 +1,8 @@
 // ==UserScript==
 // @name       RuTor.org Seed Graph Mod
 // @namespace  https://github.com/Alexey71/script-adguard/blob/master/RuTor.org_Seed_Graph_Mod.js
-// @version    0.4.8
+// @version    0.4.9
 // @description  Помогает визуально увидить популярность той или иной раздачи.
-// @include      *rutor.uproxy.link/*
 // @include      *rutor.is/*
 // @include      *rutor.info/*
 // @grant       GM_getValue
@@ -13,6 +12,9 @@
 // ==/UserScript==
 
 //Version log:
+// v0.4.9
+//	- Удаление умерших зеркал сайта
+//
 // v0.4.7
 //	- Косметика
 //	- Добавлено выделение раздач с переводом Пифагор
