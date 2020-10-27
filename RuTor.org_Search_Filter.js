@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name       RuTor.org Search Filter
-// @namespace  rutor
+// @namespace  https://raw.githubusercontent.com/Alexey71/script-adguard/master/RuTor.org_Search_Filter.js
 // @version    1.2
 // @description  search current table
 // @include      *rutor.uproxy.link/*
