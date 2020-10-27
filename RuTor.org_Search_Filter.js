@@ -1,18 +1,11 @@
 // ==UserScript==
 // @name       RuTor.org Search Filter
 // @namespace  rutor
-// @version    1.1
+// @version    1.2
 // @description  search current table
-// @include      *top-tor.org/*
-// @include      *zerkalo-rutor.org/*
-// @include      *ru-ru.org/*
+// @include      *rutor.uproxy.link/*
 // @include      *rutor.is/*
 // @include      *rutor.info/*
-// @include      *ultra-tor.com/*
-// @include      *free-tor.org/*
-// @include      *bit-tor.org/*
-// @include      *fast-tor.net/*
-// @include      *rutor.in/*
 // @copyright  2014, drakulaboy
 // ==/UserScript==
 $(function(e){
