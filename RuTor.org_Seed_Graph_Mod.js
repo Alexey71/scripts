@@ -1,19 +1,11 @@
 // ==UserScript==
 // @name       RuTor.org Seed Graph Mod
 // @namespace  https://github.com/Alexey71/script-adguard/blob/master/RuTor.org_Seed_Graph_Mod.js
-// @version    0.4.7
+// @version    0.4.8
 // @description  Помогает визуально увидить популярность той или иной раздачи.
-// @include      *top-tor.org/*
-// @include      *zerkalo-rutor.org/*
-// @include      *ru-ru.org/*
+// @include      *rutor.uproxy.link/*
 // @include      *rutor.is/*
 // @include      *rutor.info/*
-// @include      *ultra-tor.com/*
-// @include      *free-tor.org/*
-// @include      *bit-tor.org/*
-// @include      *fast-tor.net/*
-// @include      *rutor.in/*
-// @include      *new-tor.info/*
 // @grant       GM_getValue
 // @grant       GM_setValue
 // @grant       GM_addStyle
