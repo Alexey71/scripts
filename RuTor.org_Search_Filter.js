@@ -1,13 +1,17 @@
 // ==UserScript==
 // @name       RuTor.org Search Filter
-// @namespace  https://raw.githubusercontent.com/Alexey71/script-adguard/master/RuTor.org_Search_Filter.js
-// @version    1.2
+// @namespace  https://github.com/Alexey71/script-adguard/blob/master/RuTor.org_Search_Filter.js
+// @version    1.3
 // @description  search current table
-// @include      *rutor.uproxy.link/*
 // @include      *rutor.is/*
 // @include      *rutor.info/*
-// @copyright  2014, drakulaboy
+//
 // ==/UserScript==
+
+//Version log:
+// v1.3
+//	- Удаление умерших зеркал сайта
+
 $(function(e){
     $('<input id="filter" />')
     .focus()
