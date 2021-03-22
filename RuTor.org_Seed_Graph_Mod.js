@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       RuTor.org Seed Graph Mod
 // @namespace  https://github.com/Alexey71/script-adguard/blob/master/RuTor.org_Seed_Graph_Mod.js
-// @version    0.5.1
+// @version    0.5.2
 // @description  Помогает визуально увидить популярность той или иной раздачи.
 // @include      *rutor.is/*
 // @include      *rutor.info/*
@@ -12,6 +12,9 @@
 // ==/UserScript==
 
 //Version log:
+// v0.5.2
+//	- Добавлено выделение раздач за 2021 год
+//
 // v0.5.1
 //	- Добавлено выделение раздач с переводом Нота
 //
@@ -61,7 +64,7 @@
 // 	- Лицензионные раздачи теперь помечаются другим цветом.
 //
 
-GM_addStyle('#qmegas_settings { width: 400px; height: 400px; position: fixed; left: 0; top: 0; background-color: #fff; border: 1px solid #a00; }');
+GM_addStyle('#qmegas_settings { width: 400px; height: 470px; position: fixed; left: 0; top: 0; background-color: #fff; border: 1px solid #a00; }');
 GM_addStyle('#qmegas_settings .header {	background: url("http://s.rutor.info/i/backgr.png") 0 -13px; height: 41px; color: #000000; font-weight: bold; text-align: center; }');
 GM_addStyle('#qmegas_settings .fields { padding: 5px; }');
 GM_addStyle('#qmegas_settings .fields .row { clear: both; height: 30px; }');
@@ -180,7 +183,7 @@ function RutorScript()
 		});
 		$('#menu').append($tab);
 
-		var $wnd = $('<div id="qmegas_settings" style="display: none">	<div class="header">Настройка скрипта</div>	<div class="fields">		<div class="row">			<div class="col1">Цвет полоски популярности раздачи</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_line_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_year"> Выделять за 2020 год (любые)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_year_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_license"> Выделять лицензии (игры, софт, видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_license_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_uhd"> Выделять 4K (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_uhd_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_itunes"> Выделять с переводом iTunes (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_itunes_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_hdrezka"> Выделять с переводом HDRezka Studio (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_hdrezka_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_pifagor"> Выделять с переводом Пифагор (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_pifagor_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_kravec"> Выделять с переводом Кравец (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_kravec_color" /></div>		</div>		<div class="row">			<div class="col2"><input type="checkbox" id="qmegas_mark_sdi"> Выделять с переводом SDI Media (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_sdi_color" /></div>		</div>		<div class="row">			<div class="col2"><input type="checkbox" id="qmegas_mark_amedia"> Выделять с переводом Amedia (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_amedia_color" /></div>		</div>		<div class="row">			<div class="col2"><input type="checkbox" id="qmegas_mark_fox"> Выделять с переводом FOX (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_fox_color" /></div>		</div>		<div class="row">			<div class="col2"><input type="checkbox" id="qmegas_mark_netflix"> Выделять с переводом NetFlix (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_netflix_color" /></div>		</div>		<div class="row">			<div class="col2"><input type="checkbox" id="qmegas_mark_nota"> Выделять с переводом Нота (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_nota_color" /></div>		</div>		<div class="row" style="text-align: center">			<input type="button" value="Сохранить настройки" id="qmegas_save_settings" />		</div>	</div></div>');
+		var $wnd = $('<div id="qmegas_settings" style="display: none">	<div class="header">Настройка скрипта</div>	<div class="fields">		<div class="row">			<div class="col1">Цвет полоски популярности раздачи</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_line_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_year"> Выделять за 2021 год (любые)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_year_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_license"> Выделять лицензии (игры, софт, видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_license_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_uhd"> Выделять 4K (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_uhd_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_itunes"> Выделять с переводом iTunes (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_itunes_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_hdrezka"> Выделять с переводом HDRezka Studio (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_hdrezka_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_pifagor"> Выделять с переводом Пифагор (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_pifagor_color" /></div>		</div>		<div class="row"> 			<div class="col2"><input type="checkbox" id="qmegas_mark_kravec"> Выделять с переводом Кравец (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_kravec_color" /></div>		</div>		<div class="row">			<div class="col2"><input type="checkbox" id="qmegas_mark_sdi"> Выделять с переводом SDI Media (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_sdi_color" /></div>		</div>		<div class="row">			<div class="col2"><input type="checkbox" id="qmegas_mark_amedia"> Выделять с переводом Amedia (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_amedia_color" /></div>		</div>		<div class="row">			<div class="col2"><input type="checkbox" id="qmegas_mark_fox"> Выделять с переводом FOX (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_fox_color" /></div>		</div>		<div class="row">			<div class="col2"><input type="checkbox" id="qmegas_mark_netflix"> Выделять с переводом NetFlix (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_netflix_color" /></div>		</div>		<div class="row">			<div class="col2"><input type="checkbox" id="qmegas_mark_nota"> Выделять с переводом Нота (видео)</div>			<div class="col3"><input type="color" class="qmegas-color" id="qmegas_nota_color" /></div>		</div>		<div class="row" style="text-align: center">			<input type="button" value="Сохранить настройки" id="qmegas_save_settings" />		</div>	</div></div>');
 		$('body').append($wnd);
 
 		var obj = this;
@@ -231,7 +234,7 @@ function RutorScript()
 		    count = Math.min(max_width, parseInt(count/1));
 		    $($trs.get(1)).append('<div class="qmegas-line" style="width: ' + count + 'px"></div>');
 
-		    if (obj.settings.mark_year && ((sp1a.innerHTML.indexOf('(2020)') !== -1) || (sp1a.innerHTML.indexOf('-2020)') !== -1) || (sp1a.innerHTML.indexOf('(2020-') !== -1)))
+		    if (obj.settings.mark_year && ((sp1a.innerHTML.indexOf('(2021)') !== -1) || (sp1a.innerHTML.indexOf('-2021)') !== -1) || (sp1a.innerHTML.indexOf('(2021-') !== -1)))
 		        $(this).addClass('qmegas-year');
 		    if (obj.settings.mark_license && ((sp1a.innerHTML.indexOf('| Лицензия') !== -1) || (sp1a.innerHTML.indexOf('| лицензия') !== -1) || (sp1a.innerHTML.indexOf('Лицензия,') !== -1) || (sp1a.innerHTML.indexOf(', Лицензия') !== -1) || (sp1a.innerHTML.indexOf('лицензия,') !== -1) || (sp1a.innerHTML.indexOf(', лицензия') !== -1) || (sp1a.innerHTML.indexOf('Лицензия') !== -1)))
 		        $(this).addClass('qmegas-license');
@@ -253,7 +256,7 @@ function RutorScript()
 		        $(this).addClass('qmegas-fox');
 		    if (obj.settings.mark_netflix && ((sp1a.innerHTML.indexOf('| NetFlix') !== -1) || (sp1a.innerHTML.indexOf('| Netflix') !== -1) || (sp1a.innerHTML.indexOf('NetFlix,') !== -1) || (sp1a.innerHTML.indexOf('Netflix,') !== -1) || (sp1a.innerHTML.indexOf(', NetFlix') !== -1) || (sp1a.innerHTML.indexOf(', Netflix') !== -1)))
 		        $(this).addClass('qmegas-netflix');
-		    if (obj.settings.mark_nota && ((sp1a.innerHTML.indexOf('| Нота') !== -1) || (sp1a.innerHTML.indexOf('Нота,') !== -1) || (sp1a.innerHTML.indexOf(', Нота') !== -1) || (sp1a.innerHTML.indexOf('& Нота') !== -1)))
+		    if (obj.settings.mark_nota && ((sp1a.innerHTML.indexOf('| Нота') !== -1) || (sp1a.innerHTML.indexOf('Нота,') !== -1) || (sp1a.innerHTML.indexOf(', Нота') !== -1) || (sp1a.innerHTML.indexOf('Нота') !== -1)))
 		        $(this).addClass('qmegas-nota');
 		});
 	}
