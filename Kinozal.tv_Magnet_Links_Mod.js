@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         kinozal.tv magnet links MOD
 // @namespace    none
-// @version      0.3
+// @version      0.4
 // @description  add magnet links near to torrent links for kinozal.tv pages
 // @author       vike
 // @include      /^https?:\/\/kinozal.(tv|guru|me)\/details.php\?id=\d+$/
@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 $(function(){
-    var imgURL = 'https://s8.hostingkartinok.com/uploads/images/2021/02/48db679208a66905e46cd993c69eed20.jpg';
+    var imgURL = 'https://raw.githubusercontent.com/Alexey71/script-adguard/master/Kinozal.tv_Magnet_Links_Mod.jpg';
     $("td[class='nw']").after('<td style="width: 20px"> <a id="magnetLink" title="Скачать раздачу используя magnet ссылку" href="#"> <img src="' + imgURL + '"/> </a> </td>');
 
     $("#magnetLink").click(function(){
