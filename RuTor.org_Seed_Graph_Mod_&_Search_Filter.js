@@ -3,8 +3,17 @@
 // @namespace  https://github.com/Alexey71/script-adguard/blob/master/RuTor.org_Seed_Graph_Mod_&_Search_Filter.js
 // @version    0.5.3
 // @description  Помогает визуально увидить популярность той или иной раздачи. Быстрый поиск на текущей странице
-// @include      *rutor.is/*
-// @include      *rutor.info/*
+// @match       http://rutorc6mqdinc4cz.onion/
+// @match       http://tor-ru.net/*
+// @match       http://zerkalo-rutor.org/*
+// @match       http://rutor.info/*
+// @match       http://free-rutor.org/*
+// @match       http://freedom-tor.org/*
+// @match       http://top-tor.org/*
+// @match       http://rutor.is/*
+// @match       http://live-rutor.org/*
+// @match       http://xrutor.org/*
+// @match       http://new-rutor.org/*
 // @grant       GM_getValue
 // @grant       GM_setValue
 // @grant       GM_addStyle
@@ -12,6 +21,9 @@
 // ==/UserScript==
 
 //Version log:
+// v0.5.4
+//	- Обновлен список адресов
+//
 // v0.5.3
 //	- Объеденены два скрипта Seed Graph Mod и Search Filter в один
 //
@@ -284,9 +296,9 @@ $(function(e){
 });
 $(document).ready(function () {
     (function ($) {
-        
+
         $('#filter').keyup(function () {
-            
+
             var rex = new RegExp($(this).val(), 'i');
             $( "tr.tum" ).slice(1).hide();
              $( "tr.gai" ).slice(1).hide();
