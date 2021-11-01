@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name       RuTor.org Seed Graph Mod & Search Filter
-// @namespace  https://github.com/Alexey71/script-adguard/blob/master/RuTor.org_Seed_Graph_Mod_&_Search_Filter.js
+// @namespace  https://github.com/Alexey71/script/blob/master/RuTor.org_Seed_Graph_Mod_&_Search_Filter.js
 // @version    0.5.6
 // @description  Помогает визуально увидить популярность той или иной раздачи. Быстрый поиск на текущей странице
 // @match       http://rutorc6mqdinc4cz.onion/
