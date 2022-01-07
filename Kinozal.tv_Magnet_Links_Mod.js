@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 $(function(){
-    var imgURL = 'https://raw.githubusercontent.com/Alexey71/script-adguard/master/Kinozal.tv_Magnet_Links_Mod.jpg';
+    var imgURL = 'https://raw.githubusercontent.com/Alexey71/scripts/master/Kinozal.tv_Magnet_Links_Mod.jpg';
     $("td[class='nw']").after('<td style="width: 20px"> <a id="magnetLink" title="Скачать раздачу используя magnet ссылку" href="#"> <img src="' + imgURL + '"/> </a> </td>');
 
     $("#magnetLink").click(function(){
