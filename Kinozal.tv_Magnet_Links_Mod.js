@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         kinozal.tv magnet links MOD
 // @namespace    https://raw.githubusercontent.com/Alexey71/scripts/master/Kinozal.tv_Magnet_Links_Mod.js
-// @version      0.4
+// @version      0.5
 // @description  add magnet links near to torrent links for kinozal.tv pages
 // @author       vike
 // @include      /^https?:\/\/kinozal.(tv|guru|me)\/details.php\?id=\d+$/
