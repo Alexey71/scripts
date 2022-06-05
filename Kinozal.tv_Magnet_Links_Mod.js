@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         kinozal.tv magnet links MOD
 // @namespace    https://raw.githubusercontent.com/Alexey71/scripts/master/Kinozal.tv_Magnet_Links_Mod.js
-// @version      0.7
+// @version      0.8
 // @description  add magnet links near to torrent links for kinozal.tv pages
-// @icon         http://kinozal.tv/pic/favicon.ico
+// @icon         https://kinozal.guru/pic/favicon.ico
 // @include      /^https?:\/\/kinozal.(tv|guru|me)\/details.php\?id=\d+$/
 // @grant        none
 /* eslint-env jquery */
@@ -12,6 +12,8 @@
 $(function(){
     var imgURL = 'https://raw.githubusercontent.com/Alexey71/scripts/master/Kinozal.tv_Magnet_Links_Mod.jpg';
     $("a[href*='dl.kinozal.tv/download.php?id=']").before('<a id="magnetLink" title="Скачать раздачу используя magnet-ссылку" href="#"> <img src="' + imgURL + '" alt="Скачать раздачу используя magnet-ссылку" height="25"/> </a>');
+    $("a[href*='dl.kinozal.guru/download.php?id=']").before('<a id="magnetLink" title="Скачать раздачу используя magnet-ссылку" href="#"> <img src="' + imgURL + '" alt="Скачать раздачу используя magnet-ссылку" height="25"/> </a>');
+    $("a[href*='dl.kinozal.me/download.php?id=']").before('<a id="magnetLink" title="Скачать раздачу используя magnet-ссылку" href="#"> <img src="' + imgURL + '" alt="Скачать раздачу используя magnet-ссылку" height="25"/> </a>');
 
     $("#magnetLink").click(function(){
         var result = new RegExp('id=(\\d+)').exec(window.location.href);
