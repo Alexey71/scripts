@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         RuTor.org Seed Graph Mod & Search Filter
 // @namespace    https://raw.githubusercontent.com/Alexey71/scripts/master/RuTor.org_Seed_Graph_Mod_%26_Search_Filter.js
-// @version      0.5.9
+// @version      0.6.0
 // @description  Помогает визуально увидить популярность той или иной раздачи. Быстрый поиск на текущей странице
 // @icon         http://cdnbunny.org/favicon.ico
 // @match        http://rutorc6mqdinc4cz.onion/
@@ -15,6 +15,7 @@
 // @match        http://live-rutor.org/*
 // @match        http://xrutor.org/*
 // @match        http://new-rutor.org/*
+// @match        https://rutor.org/*
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_addStyle
@@ -22,6 +23,9 @@
 // ==/UserScript==
 
 //Version log:
+//
+// v0.6.0
+//	- Добавлена поддержка сайта rutor.org
 //
 // v0.5.9
 //	- Добавлено выделение раздач с переводом "NewComers"
