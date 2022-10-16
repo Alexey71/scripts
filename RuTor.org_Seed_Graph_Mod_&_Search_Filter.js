@@ -1,7 +1,10 @@
 // ==UserScript==
 // @name         RuTor.org Seed Graph Mod & Search Filter
-// @namespace    https://raw.githubusercontent.com/Alexey71/scripts/master/RuTor.org_Seed_Graph_Mod_%26_Search_Filter.js
-// @version      0.6.0
+// @updateURL    https://raw.githubusercontent.com/Alexey71/scripts/master/RuTor.org_Seed_Graph_Mod_%26_Search_Filter.js
+// @downloadURL  https://raw.githubusercontent.com/Alexey71/scripts/master/RuTor.org_Seed_Graph_Mod_%26_Search_Filter.js
+// @supportURL   https://github.com/Alexey71/scripts/blob/master/RuTor.org_Seed_Graph_Mod_%26_Search_Filter.js
+// @homepageURL  https://github.com/Alexey71/scripts
+// @version      0.6.1
 // @description  Помогает визуально увидить популярность той или иной раздачи. Быстрый поиск на текущей странице
 // @icon         http://cdnbunny.org/favicon.ico
 // @match        http://rutorc6mqdinc4cz.onion/
