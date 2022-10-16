@@ -22,7 +22,6 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_addStyle
-//
 // ==/UserScript==
 
 //Version log:
