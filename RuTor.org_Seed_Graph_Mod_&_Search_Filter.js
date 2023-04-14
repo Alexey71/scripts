@@ -7,12 +7,9 @@
 // @version      0.6.2
 // @description  Помогает визуально увидить популярность той или иной раздачи. Быстрый поиск на текущей странице
 // @icon         http://cdnbunny.org/favicon.ico
-// @match        http://rutor.info/*
-// @match        https://rutor.info/*
-// @match        http://rutor.is/*
-// @match        https://rutor.is/*
-// @match        http://rutor.org/*
-// @match        https://rutor.org/*
+// @match        *://rutor.info/*
+// @match        *://rutor.is/*
+// @match        *://rutor.org/*
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_addStyle
