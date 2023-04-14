@@ -4,20 +4,14 @@
 // @downloadURL  https://raw.githubusercontent.com/Alexey71/scripts/master/RuTor.org_Seed_Graph_Mod_%26_Search_Filter.js
 // @supportURL   https://github.com/Alexey71/scripts/blob/master/RuTor.org_Seed_Graph_Mod_%26_Search_Filter.js
 // @homepageURL  https://github.com/Alexey71/scripts
-// @version      0.6.1
+// @version      0.6.2
 // @description  Помогает визуально увидить популярность той или иной раздачи. Быстрый поиск на текущей странице
 // @icon         http://cdnbunny.org/favicon.ico
-// @match        http://rutorc6mqdinc4cz.onion/
-// @match        http://tor-ru.net/*
-// @match        http://zerkalo-rutor.org/*
 // @match        http://rutor.info/*
-// @match        http://free-rutor.org/*
-// @match        http://freedom-tor.org/*
-// @match        http://top-tor.org/*
+// @match        https://rutor.info/*
 // @match        http://rutor.is/*
-// @match        http://live-rutor.org/*
-// @match        http://xrutor.org/*
-// @match        http://new-rutor.org/*
+// @match        https://rutor.is/*
+// @match        http://rutor.org/*
 // @match        https://rutor.org/*
 // @grant        GM_getValue
 // @grant        GM_setValue
@@ -25,6 +19,9 @@
 // ==/UserScript==
 
 //Version log:
+//
+// v0.6.2
+//	- Удалены неактивные домены и добавлены новые
 //
 // v0.6.0
 //	- Добавлена поддержка сайта rutor.org
