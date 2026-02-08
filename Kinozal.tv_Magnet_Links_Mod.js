@@ -4,10 +4,10 @@
 // @downloadURL  https://raw.githubusercontent.com/Alexey71/scripts/master/Kinozal.tv_Magnet_Links_Mod.js
 // @supportURL   https://github.com/Alexey71/scripts/blob/master/Kinozal.tv_Magnet_Links_Mod.js
 // @homepageURL  https://github.com/Alexey71/scripts
-// @version      1.0
+// @version      1.1
 // @description  add magnet links near to torrent links for kinozal.tv pages with copy functionality
 // @icon         https://kinozal.guru/pic/favicon.ico
-// @include      /^https?:\/\/kinozal.(tv|guru|me)\/details.php\?id=\d+$/
+// @include      /^https?:\/\/kinozal.(tv|guru|me)\/details.php\?id=\d+.*$/
 // @grant        GM_notification
 // @grant        GM_setClipboard
 /* eslint-env jquery */
